@@ -139,6 +139,17 @@
         font-size: 120%;
         cursor: pointer;
     }
+    #outPutText2{
+        background-image: url('./Imagenes/Muñeco.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    #outPutText2:focus{
+        background-image: none;
+    }
+    #outPutText2::before{
+        background-image: none;
+    }
 }
 
 

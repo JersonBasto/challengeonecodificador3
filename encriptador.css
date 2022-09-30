@@ -1,30 +1,226 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
+    #inputs {
+        height: 550px;
+    }
 
+    #outPutText {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        margin-top: 35%;
+    }
+
+    #outPutText2 {
+        width: 98%;
+        height: 98%;
+    }
+
+    #inputText {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+    }
+
+    #inputText2 {
+        width: 98%;
+        height: 98%;
+    }
+    #botones{
+        text-align: center;
+        position: absolute;
+        transform: translateY(-390px);
+    }
+    #copiar{
+        position: absolute;
+        transform: translateY(250px) translateX(-110px);
+    }
 }
 
-@media screen and (max-width: 768px) and (min-width: 374px) {
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    #inputs {
+        height: 500px;
+    }
 
+    #outPutText {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        margin-top: 25%;
+    }
+
+    #outPutText2 {
+        width: 98%;
+        height: 98%;
+    }
+
+    #inputText {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+    }
+
+    #inputText2 {
+        width: 98%;
+        height: 98%;
+    }
+    #botones{
+        text-align: center;
+        position: absolute;
+        transform: translateY(-350px);
+    }
+    #copiar{
+        position: absolute;
+        transform: translateY(290px);
+    }
 }
 
-@media screen and (min-width: 767px) {
-    #inputs{
+@media screen and (min-width: 768px) {
+    #inputs {
         display: flex;
+        height: 400px;
+        padding: 0px 30px 30px 30px;
     }
-    #inputText{
-        width: 50%;
-        height: 70%;
+
+    #outPutText {
+        width: 30%;
+        height: 100%;
+        padding: 10px;
     }
-    #inputText2{
+
+    #outPutText2 {
         width: 100%;
         height: 100%;
     }
+
+    #inputText {
+        width: 70%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    #inputText2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #btns {
+        width: 70%;
+    }
+
+    #btnCopiar {
+        width: 30%;
+    }
+
+    #encriptar {
+        margin-left: 30%;
+    }
+
+    #outPutText2 {
+        background-image: url('./Imagenes/Muñeco.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    #outPutText2:not(:placeholder-shown) {
+        background-image: none;
+        content: "Hola";
+    }
 }
-#alertImg{
-    width: 20px;
-    height: 20px;
+
+#alertImg {
+    width: 12px;
+    height: 12px;
 }
-#imgLogo{
+
+#imgLogo {
     margin-left: 4%;
     width: 35px;
     height: 35px;
+}
+
+#inputText {
+    transition: 0.5s;
+}
+
+#outPutText {
+    transition: 0.5s;
+}
+
+#inputText2 {
+    resize: none;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#outPutText2 {
+    resize: none;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    transition: 0.5s;
+}
+
+#alert {
+    font-size: 12px;
+}
+
+#botones {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#btnCopiar {
+    text-align: center;
+    transition: 0.5s;
+}
+
+#copiar {
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    border: 2px solid rgb(4, 132, 179);
+    transition: 0.5s;
+}
+
+#copiar:hover {
+    cursor: pointer;
+    background: rgb(4, 132, 179);
+    color: white;
+}
+
+#encriptar {
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    border: 2px solid rgb(12, 162, 9);
+    transition: 0.5s;
+}
+
+#encriptar:hover {
+    cursor: pointer;
+    background: rgb(12, 162, 9);
+    color: white;
+}
+
+#desencriptar {
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    border: 2px solid gray;
+    transition: 0.5s;
+}
+
+#desencriptar:hover {
+    cursor: pointer;
+    background: gray;
+    color: white;
 }

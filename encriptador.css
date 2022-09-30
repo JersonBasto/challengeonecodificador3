@@ -1,4 +1,4 @@
-@media screen and (max-width: 374px) {
+@media (max-width: 374px) {
     #inputs {
         height: 550px;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@media screen and (max-width: 767px) and (min-width: 375px) {
+@media (max-width: 767px) and (min-width: 375px) {
     #inputs {
         height: 500px;
     }
@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     #inputs {
         display: flex;
         height: 400px;

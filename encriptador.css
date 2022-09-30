@@ -20,6 +20,7 @@
         justify-items: center;
         flex-grow: 1;
     }
+
     #encriptar {
         margin: 1%;
         background-color: #0A3871;
@@ -29,7 +30,7 @@
         font-size: 20px;
         cursor: pointer;
     }
-    
+
     #desencriptar {
         margin: 1%;
         background-color: #D8DFE8;
@@ -39,7 +40,8 @@
         font-size: 20px;
         cursor: pointer;
     }
-    #btnCopiar{
+
+    #btnCopiar {
         display: flex;
         justify-content: center;
     }
@@ -75,6 +77,7 @@
         font-size: 32px;
         line-height: 120%;
     }
+
     #encriptar {
         padding-left: 10%;
         padding-right: 10%;
@@ -87,7 +90,7 @@
         font-size: 120%;
         cursor: pointer;
     }
-    
+
     #desencriptar {
         padding-left: 10%;
         padding-right: 10%;
@@ -114,6 +117,7 @@
         grid-template-columns: 1fr 0.5fr;
         background-color: #E5E5E5;
     }
+
     #encriptar {
         padding-left: 10%;
         padding-right: 10%;
@@ -126,7 +130,7 @@
         font-size: 120%;
         cursor: pointer;
     }
-    
+
     #desencriptar {
         padding-left: 10%;
         padding-right: 10%;
@@ -139,19 +143,17 @@
         font-size: 120%;
         cursor: pointer;
     }
-    #outPutText2{
+
+    #outPutText2:not(:placeholder-shown) {
+        background-image: none
+    }
+
+    #outPutText2:placeholder-shown {
         background-image: url('./Imagenes/Muñeco.png');
         background-repeat: no-repeat;
         background-position: 50% 50%;
     }
-    #outPutText2:focus{
-        background-image: none;
-    }
-    #outPutText2::before{
-        background-image: none;
-    }
 }
-
 
 #Logo {
     grid-area: header;
@@ -163,6 +165,7 @@
 #Logo h1 {
     margin: 0px;
     padding: 0px;
+    background-color: #D8DFE8;
 }
 
 #inputText {
@@ -232,14 +235,16 @@
     font-size: 120%;
     cursor: pointer;
 }
-#alert{
+
+#alert {
     color: #495057;
     font-size: 80%;
     text-align: justify;
     width: 50%;
     padding-left: 15%;
 }
-#alertImg{
+
+#alertImg {
     width: 12px;
     height: 12px;
     color: #495057;
